@@ -7,7 +7,11 @@ import math
 def g(x):
     return math.log(100 - x**2) + math.sqrt(84 - 5*x - x**2)
 
+print("This equation only works for values between and including -9 and 7")
 x = input("Input the value for x: ")
 x = float(x)
 
-print("g(" + str(x) + ") = " + str(g(x)))
+if (-10 < x) & (x <=7):
+    print("g(" + str(x) + ") = " + str(g(x)))
+else:
+    print("This number won't work, sorry.")
